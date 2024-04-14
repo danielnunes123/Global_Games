@@ -1,4 +1,4 @@
-import React from 'react'
+
 import  fortnit from './images/Fornite-PS5-Xbox-Series-X-ameliorations-removebg-preview 1.png'
 import logof from './images/fortnite-logo-black-png.png'
 import Carrousel from '../layout/Carrousel'
