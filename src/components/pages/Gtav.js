@@ -30,12 +30,12 @@ secundárias e muito mais.
     <div className='border-[#683CCF] border-l-[1px] pl-[10px] text-white'>
       <span className='gc'>Género</span>
   <br/>
-      <span>Acção e Mundo livre</span>
+      <span className='k'>Acção e Mundo livre</span>
     </div>
     <div  className='border-[#683CCF] border-l-[1px] pl-[10px] text-white'>
     <span className='gc'>Características</span>
   <br/>
-    <span>Cooperativa - Multe jogador</span>
+    <span className='k'>Cooperativa - Multe jogador</span>
     </div>
   </div>
   </div>
