@@ -155,27 +155,17 @@ align-items: center;
   }
 
 
-  .inter-.inf {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings:
-      "slnt" 0;
-  }
   .inf{
+font-family: "Inter";
     color: white;
     font-size: 15.77px;
     line-height: 19.09px;
   }
 
   .gc {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Inter";
     font-weight: 700;
-    font-style: normal;
-    font-variation-settings:
-      "slnt" 0;
       color: #FFFFFF8C;
       font-size: 14.94px;
+      line-height: 18.09px;
   }
