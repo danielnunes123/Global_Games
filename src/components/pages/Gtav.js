@@ -26,6 +26,7 @@ O jogo oferece uma variedade de atividades para os jogadores, incluindo assaltos
 secundárias e muito mais.
   </p>
   <br/>
+  <br/>
   <div className='flex gap-[200px] w-[100%]'>
     <div className='border-[#683CCF] border-l-[1px] pl-[10px] text-white'>
       <span className='gc'>Género</span>
