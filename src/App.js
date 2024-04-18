@@ -9,6 +9,7 @@ import Novos from './components/pages/Novos';
 import Favoritos from './components/pages/Favoritos';
 import Definicao from './components/pages/Definicao';
 import Meusjogos from './components/pages/Meusjogos';
+import Gtav from './components/pages/Gtav';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
     <Route path='/favoritos'  element={<Favoritos/>}/>
     <Route path='/definição'  element={<Definicao/>}/>
     <Route path='/meusjogos'  element={<Meusjogos/>}/>
+    <Route path='/GTA-V/download'  element={<Gtav/>}/>
   </Routes>
   </Container>
   </div>

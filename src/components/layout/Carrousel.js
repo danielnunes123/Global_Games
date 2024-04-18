@@ -1,15 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { RiArrowLeftSLine } from "react-icons/ri";
 import { RiArrowRightSLine } from "react-icons/ri";
+import { Link } from 'react-router-dom';
 
 export default function Carrousel() {
 const [data, setData] = useState([]);
 const carrousel = useRef(null);
 
 
-const handleonClick = ()=>{
-  console.log('O seu Download iniciou')
-}
+
 
 
 useEffect(()=>{
@@ -45,7 +44,7 @@ if(!data || !data.length) return null;
             <br/>
             <div className='carrousel' ref={carrousel}>
     {data.map((item)=>{
-        const {id,name,category,image} = item;
+        const {id,name,category,image, url} = item;
         return (
             <div key={id} className='w-[321px] h-[259px] bg-[#121423] rounded-[20px] flex items-center justify-center flex-none'>
             <div >
@@ -57,7 +56,7 @@ if(!data || !data.length) return null;
               <br/>
               <span className='category'>{category}</span>
               </div>
-              <button id='btnget' className='bg-[#683CCF] w-[65px] h-[29px] rounded-[15px]' onClick={handleonClick}>Get</button>
+              <button id='btnget' className='bg-[#683CCF] w-[65px] h-[29px] rounded-[15px]'><Link to={url}>Get</Link></button>
             </div>
             </div>
             </div>
