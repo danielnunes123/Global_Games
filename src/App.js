@@ -6,7 +6,6 @@ import Container from './components/layout/Container';
 import Sidebar from './components/layout/Sidebar';
 import Menubar from './components/layout/Menubar';
 import Novos from './components/pages/Novos';
-import Discover from './components/pages/Discover';
 import Favoritos from './components/pages/Favoritos';
 import Definicao from './components/pages/Definicao';
 import Meusjogos from './components/pages/Meusjogos';
@@ -21,7 +20,7 @@ function App() {
       <Routes>
     <Route path='/' exact element={<Home/>}/>
     <Route path='/novos'  element={<Novos/>}/>
-    <Route path='/discover'  element={<Discover/>}/>
+    <Route path='/discover'  element={<Home/>}/>
     <Route path='/favoritos'  element={<Favoritos/>}/>
     <Route path='/definição'  element={<Definicao/>}/>
     <Route path='/meusjogos'  element={<Meusjogos/>}/>
