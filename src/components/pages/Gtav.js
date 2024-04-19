@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { HiOutlineDownload } from "react-icons/hi";
@@ -7,9 +8,11 @@ import { VscHeartFilled } from "react-icons/vsc";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { DiWindows } from "react-icons/di";
 import { HiOutlineShare } from "react-icons/hi";
+import Modal from '../layout/Modal';
 
 export default function Gtav() {
   const [liked, setLiked] = useState(false)
+  const [openModal, setOpenModal] = useState(false)
 
 
 
@@ -96,9 +99,10 @@ distribuido por Rockstar Games.
 </div>
 <br/>
 <div className='w-[100%] flex justify-center'>
-<button className='bna' ><HiOutlineShare style={{width:'15px', height:'15px'}}/> Partilhar</button>
+<button className='bna' ><HiOutlineShare style={{width:'15px', height:'15px'}} onClick={()=> setOpenModal(true)}/> Partilhar</button>
 </div>
   </div>
+  <Modal isOpen={openModal}/>
   </div>
 
   )
