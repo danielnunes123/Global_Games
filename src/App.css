@@ -322,3 +322,50 @@ font-family: "Inter";
     width: 665px;
     padding: 20px;
   }
+  .yw{
+    font-weight: 700;
+    line-height: 38.9px;
+    font-size:32.14px;
+    font-family: 'Inter';
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .qw{
+    font-weight: 300;
+    line-height: 23.5px;
+    font-size: 19.42px;
+    font-family: 'Inter';
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .infw{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .cc{
+    gap: 20px;
+    background-color: transparent;
+    width: 494px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  height: 80px;
+    border-radius: 20px;
+    border: 1.5px solid #FFFFFF;
+
+    /* Texto */
+    font-family: 'Inter';
+    color: white;
+    font-weight: 300;
+    line-height: 19.58px;
+    font-size: 16.18px;
+  }

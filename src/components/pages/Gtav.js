@@ -99,10 +99,10 @@ distribuido por Rockstar Games.
 </div>
 <br/>
 <div className='w-[100%] flex justify-center'>
-<button className='bna' ><HiOutlineShare style={{width:'15px', height:'15px'}} onClick={()=> setOpenModal(true)}/> Partilhar</button>
+<button className='bna'   onClick={()=> setOpenModal(true)}><HiOutlineShare style={{width:'15px', height:'15px'}}/> Partilhar</button>
 </div>
   </div>
-  <Modal isOpen={openModal}/>
+  <Modal isOpen={openModal} isClose={()=> setOpenModal(false)}/>
   </div>
 
   )
