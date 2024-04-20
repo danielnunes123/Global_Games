@@ -73,7 +73,7 @@ secundárias e muito mais.
 <br/>
 <div className='flex flex-wrap gap-[10px]'>
 <button className='bni'><HiOutlineDownload style={{width:'19px', height:'19px'}}/>Download</button>
-<button className='bnt' onClick={handleOnClick}>{liked ?  <VscHeart  style={{width:'19px', height:'19px'}}/> : <VscHeartFilled  style={{width:'19px', height:'19px'}}/>}Adicionar aos favoritos</button>
+<button className='bnt' onClick={handleOnClick}>{liked ?  <VscHeartFilled  style={{width:'19px', height:'19px'}}/>    : <VscHeart  style={{width:'19px', height:'19px'}}/> }Adicionar aos favoritos</button>
 <br/>
 <span className='h'>Sobre o jogo<AiOutlineInfoCircle style={{width:'15px', height:'15px'}}/></span>
 <span className='h1'>
