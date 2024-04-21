@@ -10,6 +10,7 @@ import Favoritos from './components/pages/Favoritos';
 import Definicao from './components/pages/Definicao';
 import Meusjogos from './components/pages/Meusjogos';
 import Gtav from './components/pages/Gtav';
+import SigninSignup from './components/pages/SigninSignup';
 
 function App() {
   return (
@@ -19,13 +20,14 @@ function App() {
     <Sidebar/>
     <Container>
       <Routes>
-    <Route path='/' exact element={<Home/>}/>
+    <Route path='/' exact element={<SigninSignup/>}/>
     <Route path='/novos'  element={<Novos/>}/>
     <Route path='/discover'  element={<Home/>}/>
     <Route path='/favoritos'  element={<Favoritos/>}/>
     <Route path='/definição'  element={<Definicao/>}/>
     <Route path='/meusjogos'  element={<Meusjogos/>}/>
     <Route path='/GTA-V/download'  element={<Gtav/>}/>
+    <Route path='/register'  element={<SigninSignup/>}/>
   </Routes>
   </Container>
   </div>

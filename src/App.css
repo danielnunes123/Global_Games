@@ -369,3 +369,17 @@ font-family: "Inter";
     line-height: 19.58px;
     font-size: 16.18px;
   }
+  #qm{
+    font-weight: 600;
+    line-height: 16.22px;
+    font-family: 'Inter';
+    font-size: 13.4px;
+    color: white;
+  }
+  #qn{
+    font-weight: 300;
+    line-height: 12.38px;
+    font-family: 'Inter';
+    font-size: 10.23px;
+    color: white;
+  }
