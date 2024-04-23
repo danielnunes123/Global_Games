@@ -6,7 +6,7 @@ import Carrousela from '../layout/Carrousela'
 
 export default function Home() {
   return (
-    <div className='h-[3000px]'> 
+    <div className='h-[3000px] w-[100%]'> 
    <div id='anu' className='w-[100%] h-[415px] rounded-[30px] bg-gradient-to-t from-fuchsia-500 via-violet-600 to-violet-600 p-[10px] flex justify-between' >
     <div id='textanu'><img draggable='false'  className='w-[300px]' src={logof}/>
     <p className='w-[354px] text-white'>

@@ -14,10 +14,12 @@ export default function Definicao() {
     window.location.reload()
   }
   return (
-    <div>
-      <button onClick={logout}><Link to='/'>logout</Link></button>
+ <div>
+  {/*
+    <button onClick={logout}><Link to='/'>logout</Link></button>
       <br/>
-      <button onClick={desactive}><Link to='/'>delet</Link></button>
-    </div>
+  <button onClick={desactive}><Link to='/'>delet</Link></button> 
+*/}
+ </div>
   )
 }

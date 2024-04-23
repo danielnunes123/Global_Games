@@ -20,7 +20,8 @@ function App() {
     <Sidebar/>
     <Container>
       <Routes>
-    <Route path='/' exact element={<SigninSignup/>}/>
+   {/* <Route path='/' exact element={<SigninSignup/>}/>*/}
+   <Route path='/' exact  element={<Home/>}/>
     <Route path='/novos'  element={<Novos/>}/>
     <Route path='/discover'  element={<Home/>}/>
     <Route path='/favoritos'  element={<Favoritos/>}/>

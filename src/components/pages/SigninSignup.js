@@ -1,6 +1,9 @@
+{/*
 import React, { useEffect, useRef, useState } from 'react'
 import Home from './Home'
 import Menubar from '../layout/Menubar'
+import { HiOutlineArrowSmLeft } from "react-icons/hi";
+
 
 export default function SigninSignup() {
     const name = useRef()
@@ -50,9 +53,11 @@ const handleSignIn=()=>{
 
   return (
     <div>
+  
+
         {showHome?<Home/>:
         (show?
-             <div>
+             <div className='bg-transparent h-[max-content] w-[100%] pl-[40px]'>
         <input type='text' placeholder='email' ref={email}/>
         <br/><br/>
         <input type='password' placeholder='password' ref={password}/>
@@ -74,6 +79,8 @@ const handleSignIn=()=>{
     </div>
         )
       }
+      
     </div>
   )
 }
+*/}
