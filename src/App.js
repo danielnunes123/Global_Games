@@ -16,11 +16,14 @@ function App() {
   return (
 <Router>
   <div className='flex flex-wrap'>
+  <Routes>
+          <Route path='/' exact element={<SigninSignup/>}/>
+          <Route path='/register'  element={<SigninSignup/>}/>
+    </Routes>
     <Menubar/>
     <Sidebar/>
     <Container>
       <Routes>
-   {/* <Route path='/' exact element={<SigninSignup/>}/>*/}
    <Route path='/' exact  element={<Home/>}/>
     <Route path='/novos'  element={<Novos/>}/>
     <Route path='/discover'  element={<Home/>}/>
@@ -28,7 +31,6 @@ function App() {
     <Route path='/definição'  element={<Definicao/>}/>
     <Route path='/meusjogos'  element={<Meusjogos/>}/>
     <Route path='/GTA-V/download'  element={<Gtav/>}/>
-    <Route path='/register'  element={<SigninSignup/>}/>
   </Routes>
   </Container>
   </div>

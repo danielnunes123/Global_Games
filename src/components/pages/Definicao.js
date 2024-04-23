@@ -15,11 +15,11 @@ export default function Definicao() {
   }
   return (
  <div>
-  {/*
+ 
     <button onClick={logout}><Link to='/'>logout</Link></button>
       <br/>
   <button onClick={desactive}><Link to='/'>delet</Link></button> 
-*/}
+
  </div>
   )
 }
