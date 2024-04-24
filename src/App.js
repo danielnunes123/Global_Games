@@ -19,7 +19,10 @@ function App() {
   <Routes>
           <Route path='/' exact element={<SigninSignup/>}/>
           <Route path='/register'  element={<SigninSignup/>}/>
+          <Route path='/definição'  element={<Definicao/>}/>  
     </Routes>
+   
+   
     <Menubar/>
     <Sidebar/>
     <Container>
@@ -28,7 +31,7 @@ function App() {
     <Route path='/novos'  element={<Novos/>}/>
     <Route path='/discover'  element={<Home/>}/>
     <Route path='/favoritos'  element={<Favoritos/>}/>
-    <Route path='/definição'  element={<Definicao/>}/>
+
     <Route path='/meusjogos'  element={<Meusjogos/>}/>
     <Route path='/GTA-V/download'  element={<Gtav/>}/>
   </Routes>

@@ -6,6 +6,8 @@ import { HiOutlineArrowSmLeft } from "react-icons/hi";
 import Container from '../layout/Container';
 import Sidebar from '../layout/Sidebar';
 import { Link } from 'react-router-dom';
+import { MdOutlineEmail } from "react-icons/md";
+import { FiEye } from "react-icons/fi";
 
 
 export default function SigninSignup() {
@@ -54,36 +56,85 @@ const handleSignIn=()=>{
     }
 }
 
+const logout=()=>{
+  localStorage.removeItem('signUp')
+  window.location.reload()
+}
+
+const desactive=()=>{
+  localStorage.clear()
+  window.location.reload()
+}
   return (
     <div className='ll'>
   
 <div className='lx'>
-<div className='bg-[transparent] w-[100%] h-[70px] flex items-center pl-[20px]'><Link to='/discover'><HiOutlineArrowSmLeft style={{width:'24px', height:'24px', color:'white'}}/></Link></div>
+
         {showHome?<div className='flex flex-wrap'><Menubar/><Sidebar/><Container><Home/></Container></div>:
         (show?
+          <div>
+          <div className='bg-[transparent] w-[100%] h-[70px] flex items-center pl-[20px]'><Link to='/discover'><HiOutlineArrowSmLeft style={{width:'24px', height:'24px', color:'white'}}/></Link></div>
         <div className='form'>
-        <input type='text' placeholder='email' ref={email}/>
+        <br/>
+        <div className='csu'>
+        <p className='yf'>Entrar agora</p>
+        
+        <h1 className='yg'>Entrar</h1>
+        
+        <p className='yf'>Sejá bem <e className='text-[#5F32C9]'>vindo</e></p>
+        </div>
+        <br/>
+        <div className='insd'>
+      <input type='text' placeholder='email' ref={email} className='ins'/>
+      <MdOutlineEmail style={{width:'18px', height:'18px'}}/>
+      </div>
+        <br/>
+        <div className='insd'>
+      <input type='password' placeholder='password' ref={password} className='ins'/>
+      <FiEye style={{width:'18px', height:'18px'}}/>
+      </div>
         <br/><br/>
-        <input type='password' placeholder='password' ref={password}/>
-        <br/><br/>
-        <button onClick={handleSignIn}>Login</button>
+        <div className='flex gap-[76px]'>
+        <button onClick={desactive} className='ine'><Link to='/'>Não tenho conta</Link></button> 
+        <button onClick={handleSignIn} className='ini'>Entrar</button>
+       </div>
+        </div>
         </div>
       :
+      <div>
+      <div className='bg-[transparent] w-[100%] h-[70px] flex items-center pl-[20px]'><Link to='/discover'><HiOutlineArrowSmLeft style={{width:'24px', height:'24px', color:'white'}}/></Link></div>
       <div className='form'>
-        <div className='flex gap-[30px]'>
+        <br/>
+        <div className='csy'>
+        <p className='yf'>Entrar agora</p>
+        
+        <h1 className='yg'>Criar  nova conta</h1>
+        
+        <p className='yf'>Sejá bem <e className='text-[#5F32C9]'>vindo</e></p>
+        </div>
+        <br/>
+        <div className='flex gap-[43px]'>
       <input type='text' placeholder='Nome' ref={name} className='in'/>
-      <br/>
       <br/>
       <input type='date' placeholder='Date' ref={date} className='in'/>
       </div>
-      <br/><br/>
+      <br/>
       <div className='insd'>
       <input type='text' placeholder='email' ref={email} className='ins'/>
+      <MdOutlineEmail style={{width:'18px', height:'18px'}}/>
+      </div>
+      <br/>
+      <div className='insd'>
+      <input type='password' placeholder='password' ref={password} className='ins'/>
+      <FiEye style={{width:'18px', height:'18px'}}/>
       </div>
       <br/><br/>
-      <input type='password' placeholder='password' ref={password} className='ins'/>
-      <br/><br/>
-      <button onClick={handleClick}>Crete occunt</button>
+      <div className='flex gap-[76px]'>
+      <button onClick={logout} className='ine'><Link to='/'>Já tenho uma conta</Link></button>
+      <button onClick={handleClick} className='ini'>Criar conta</button>
+      </div>
+      
+    </div>
     </div>
         )
       }

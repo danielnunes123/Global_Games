@@ -411,7 +411,7 @@ height: 100vh;
   }
 
   .in{
-    width: 165px;
+    width: 235px;
     height: 50px;
     padding: 20px;
     border-radius: 15px;
@@ -422,7 +422,12 @@ height: 100vh;
     font-family: 'Inter';
     font-size: 15.2px;
     color: white;
+    outline: none;
   } 
+  .in:focus-within{
+    border: 2px solid white;
+  }
+
   .form{
     background-color: transparent;
     width: 100%;
@@ -440,10 +445,76 @@ height: 100vh;
     outline: none;
   } 
   .insd{
-    width: 654px;
+    width: 554px;
     height: 50px;
     padding: 20px;
     border-radius: 15px;
     background-color: rgb(104,60,207, 0.5);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   } 
+
+  .insd:focus-within{
+    border: 2px solid white;
+  }
+  
+  .yf{
+    font-family: 'Inter';
+    font-size: 21.78px;
+    line-height: 26.36px;
+    color: white;
+    font-weight: 600;
+  }
+  .yg{
+    font-family: 'Inter';
+    font-size: 49.7px;
+    line-height: 60.15px;
+    color: white;
+    font-weight: 800;
+  }
+  .csy{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+  gap: 20px;
+  }
+  .csu{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+  gap: 20px;
+  }
+  .ine{
+    background-color: #683CCFC2;
+    width: 235px;
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 1px solid white;
+    font-weight: 600;
+    font-size: 14.59px;
+    line-height: 21.29px;
+    font-family: 'Inter';
+    color: white;
+  }
+  .ini{
+    background-color: white;
+    width: 235px;
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 1px solid #683CCFC2;
+    font-weight: 600;
+    font-size: 14.59px;
+    line-height: 21.29px;
+    font-family: 'Inter';
+    color: #683CCFC2;
+  }
